@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>ChatJs</title>
+        <meta name="description" content="nodeJs,聊天,socket.io,聊天室">
+        <meta name="keywords" content="nodeJs,聊天,socket.io,聊天室">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable = 1.0">
+        <link href="css/index.css" rel="stylesheet">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/index.js"> </script>
+        <script src="js/Qdrag.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="chatArea">
+                <div class="chatList">
+                    <div class="list">List</div>
+                    <div class="lists"></div>
+                </div>
+                <div class="chatCon">
+                    <div class="chatName">Public</div>
+                    <div class="chatm" data-p="0">
+                        <div class="chatText">
+                        </div>
+                    </div>
+                    <div class="chatSend">
+                        <textarea name="cstext" class="cstext"></textarea>
+                        <div class="sending">发送</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                var chat = new Chat();
+                $.d($('.chatm'), $('.chatText'), false);
+            })
+        </script>
+    </body>
+</html>

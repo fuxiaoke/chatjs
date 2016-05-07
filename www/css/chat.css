@@ -1,0 +1,61 @@
+body{
+	
+	width:100%;
+	height:100%;
+}
+
+
+.container{
+	width: 100%;
+	height: 100%;
+
+}
+
+.chatArea{
+	width:800px;
+	height:550px;
+	border:1px solid silver;
+	margin: 30px auto;
+	position: relative;
+
+
+}
+
+.chatList{
+	width:20%;
+	height: 550px;
+	float:left;
+	border-right:1px solid silver;
+	/*background:#7BF773;*/
+}
+
+.chatCon{
+	width:79.8%;
+	height: 550px;
+	float:right;
+	border:1% solid silver;
+	/*background:pink;*/
+	
+}
+
+.chatName{
+	height: 10%;
+	border-bottom: 1px solid silver;
+}
+
+.chatText{
+	height: 67%;
+	border-bottom: 1px solid silver;
+}
+
+.chatSend{
+	height: 23%;
+}
+
+.chat-content{
+	width: 632px;
+	height: 119px;
+	resize:none;
+	overflow:auto;
+	border-style:none; 
+}
